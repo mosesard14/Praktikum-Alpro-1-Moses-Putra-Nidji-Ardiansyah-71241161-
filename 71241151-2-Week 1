@@ -1,0 +1,28 @@
+#harga emas saat ini
+harga_emas_saat_ini = 685000
+
+#harga_emas_sebelumnya
+harga_emas_sebelumnya = 650000
+
+#jumlah gram emas yang dimiliki Gerrard
+beli_emas_pertama = 25
+
+#gram emas yang dibeli gerrard lagi
+beli_emas_lagi = 15 
+
+#keuntungan pertama ketika membeli emas 25 gram
+keuntungan_emas_pertama = (harga_emas_saat_ini - harga_emas_sebelumnya) * beli_emas_pertama
+
+#total keuntungan kedua 
+keuntungan_emas_kedua = (harga_emas_saat_ini - harga_emas_sebelumnya) * beli_emas_lagi 
+
+#total keuntungan 
+total_keuntungan = keuntungan_emas_pertama + keuntungan_emas_kedua
+
+#presentase keuntungan 
+persentase_keuntungan = (total_keuntungan / (harga_emas_sebelumnya * beli_emas_pertama + harga_emas_saat_ini * beli_emas_lagi))*100
+
+print("Keuntungan dari pembelian 25 gram emas : Rp. ", keuntungan_emas_pertama)
+print("Keuntungan dari pembelian 15 gram emas : Rp. ", keuntungan_emas_kedua)
+print("total keuntungan yang didapat gerrard : Rp. ", total_keuntungan)
+print("Persentase keuntungan yang diperoleh gerrard : Rp. ", persentase_keuntungan, "%")
