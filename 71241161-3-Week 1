@@ -1,0 +1,11 @@
+awal = 200000000
+akhir = 400000000
+bunga = 0.1
+n = 1
+tahun = 0
+
+while awal <= akhir:
+    awal = awal * (1+bunga/n)
+    tahun +=1
+    print ("Uang Erika Sesudah", tahun, "Tahun : Rp. ", round (awal))
+print("Untuk mencapai 400jt, maka dibutuhkan waktu", tahun, "Tahun")
